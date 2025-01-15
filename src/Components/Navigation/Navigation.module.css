@@ -1,0 +1,34 @@
+.navigation {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; /* Keep navigation inside the main container */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width inside main container */
+  z-index: 10;
+  background-color: #1e1e1e !important;
+  border-radius: 100px;
+  height: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for a sleek look */
+}
+
+.container {
+  width: 100%;
+}
+
+.navigation ul {
+  font-family: "Neuemontreal";
+  display: flex;
+  list-style: none;
+  font-size: 1.2rem;
+  gap: 24px; /* Adjust spacing between items */
+  font-weight: 500;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  color: white;
+  justify-content: space-evenly; /* Spread items evenly across the available space */
+  width: 100%; /* Ensure the `ul` takes the full width of the navigation bar */
+}
