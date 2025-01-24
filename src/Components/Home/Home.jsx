@@ -1,5 +1,11 @@
 import styles from './Home.module.css';
 import Navigation from '../../Components/Navigation/Navigation';
+import Button from '../Button/Button';
+
+const buttonLabels = [
+  'Java', 'Python', 'JavaScript', 'C++', 
+  'Ruby', 'GoLang', 'Swift', 'Kotlin', 'Rust'
+];
 
 const Home = () => {
   return (
@@ -14,7 +20,10 @@ const Home = () => {
       <div className={`${styles.right_section}`}>
         {/* Category Container */}
         <div className={styles.category}>
-          <img src="../../images/ques.png" alt="Category Icon" />
+          {buttonLabels.map((label, index) => (
+            <Button key={index} label={label} />
+          ))}
+          <img src="../../images/OldComputer.png" alt="Category Icon" />
         </div>
 
         {/* Trivia and Login Section */}

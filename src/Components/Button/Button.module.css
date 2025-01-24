@@ -1,0 +1,72 @@
+.Button {
+  width: 100px;
+  height: 25px;
+  border-radius: 70px;
+  background-color: rgba(255, 253, 253, 0.2);
+  color: #fff;
+  font-family: 'Neuemontreal';
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; /* Required to position buttons within the category */
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+/* Specific positions for each button */
+.Button:nth-child(1) {
+  top: 8%;
+  left: 10%;
+  transform: rotate(-6deg);
+}
+
+.Button:nth-child(2) {
+  top: 29%;
+  left: 5%;
+  transform: rotate(5deg);
+}
+
+.Button:nth-child(3) {
+  top: 10%;
+  left: 80%;
+  transform: rotate(-10deg);
+}
+
+.Button:nth-child(4) {
+  top: 35%;
+  left: 81%;
+  transform: rotate(8deg);
+}
+
+.Button:nth-child(5) {
+  top: 55%;
+  left: 7%;
+  transform: rotate(-4deg);
+}
+
+.Button:nth-child(6) {
+  top: 55%;
+  left: 80%;
+  transform: rotate(12deg);
+}
+
+.Button:nth-child(7) {
+  top: 85%;
+  left: 11%;
+  transform: rotate(-7deg);
+}
+
+.Button:nth-child(8) {
+  top: 75%;
+  left: 75%;
+  transform: rotate(6deg);
+}
+
+.Button:nth-child(9) {
+  top: 85%;
+  left: 70%;
+  transform: rotate(-9deg);
+}
