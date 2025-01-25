@@ -1,6 +1,7 @@
 import styles from './Home.module.css';
 import Navigation from '../../Components/Navigation/Navigation';
 import Button from '../Button/Button';
+import { useNavigate } from 'react-router-dom';
 
 const buttonLabels = [
   'Java', 'Python', 'JavaScript', 'C++', 
@@ -8,6 +9,14 @@ const buttonLabels = [
 ];
 
 const Home = () => {
+
+  const navigate = useNavigate();
+
+  const handleCategoryClick = (category) => {
+    console.log(`Category clicked: ${category}`);
+    navigate(`/quiz/${category}`);
+  };
+
   return (
     <div className={`${styles.home_section}`}>
       <div className={`${styles.left_section}`}>
@@ -21,7 +30,7 @@ const Home = () => {
         {/* Category Container */}
         <div className={styles.category}>
           {buttonLabels.map((label, index) => (
-            <Button key={index} label={label} />
+            <Button key={index} label={label} onClick={() => handleCategoryClick(label)} />
           ))}
           <img src="../../images/OldComputer.png" alt="Category Icon" />
         </div>
